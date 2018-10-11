@@ -1,0 +1,19 @@
+/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_16
+-- Compiling architecture parallel of ALU_16
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_ALU
+-- Compiling architecture testbench_16 of TB_ALU
+
+} {} {}}

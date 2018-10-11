@@ -1,0 +1,21 @@
+/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Mux.vht {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Mux.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity TB_Mux
+-- Compiling architecture testbench_64x16 of TB_Mux
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Multiplexer
+-- Compiling architecture vectorial of Multiplexer
+
+} {} {}}

@@ -1,0 +1,31 @@
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping entity lifo_stack
+# -- Skipping entity multiplexer
+# -- Skipping entity onchip_ram
+# -- Skipping entity reg
+# -- Skipping entity tb_stack
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity LIFO_Stack
+# -- Compiling architecture onchip of LIFO_Stack
+# -- Compiling entity Multiplexer
+# -- Compiling architecture vectorial of Multiplexer
+# -- Compiling entity onchip_ram
+# -- Compiling architecture SYN of onchip_ram
+# -- Compiling entity Reg
+# -- Compiling architecture canonical of Reg
+# -- Compiling entity TB_Stack
+# -- Compiling architecture testbench of TB_Stack
+# Compile of TB_Stack.vht was successful.
+# Compile of LIFO_Stack.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of Multiplexer.vhd was successful.
+# Compile of onchip_ram.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror work.tb_stack

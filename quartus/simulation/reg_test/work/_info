@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+d/home/baioc
+Ereg
+Z0 w1538483480
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 d/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/simulation/reg_test
+Z4 8/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/sequential/Reg.vhd
+Z5 F/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/sequential/Reg.vhd
+l0
+L5
+V=`QzAC2D9ldUzNVJhEA9z2
+!s100 QDXZgJ]P^^KfC@h4Ol^Od1
+Z6 OV;C;10.1d;51
+32
+!i10b 1
+Z7 !s108 1538939685.446270
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/sequential/Reg.vhd|
+Z9 !s107 /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/sequential/Reg.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+Acanonical
+R1
+R2
+Z12 DEx4 work 3 reg 0 22 =`QzAC2D9ldUzNVJhEA9z2
+l26
+L19
+Z13 V8<kAb=MfPCUfb7]onkD_23
+Z14 !s100 Sf>SanNJd8Sh[JP^kb;N01
+R6
+32
+!i10b 1
+R7
+R8
+R9
+R10
+R11
+Etb_reg
+Z15 w1538871304
+R1
+R2
+R3
+Z16 8/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Reg.vht
+Z17 F/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Reg.vht
+l0
+L5
+VS^9AlIO0[URdd86<Pol4I2
+R6
+32
+Z18 !s108 1538939685.422349
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Reg.vht|
+Z20 !s107 /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Reg.vht|
+R10
+R11
+!s100 [LK3kNeMRUC9CdDJ:zJZT2
+!i10b 1
+Atestbench
+R1
+R2
+DEx4 work 6 tb_reg 0 22 S^9AlIO0[URdd86<Pol4I2
+l37
+L9
+VZT2;TQAjQURK`WSABKaPz0
+!s100 23M@Ej;C36T50cO<:jS5_1
+R6
+32
+R18
+R19
+R20
+R10
+R11
+!i10b 1

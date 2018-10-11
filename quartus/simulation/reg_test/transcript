@@ -1,0 +1,17 @@
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping entity reg
+# -- Skipping entity tb_reg
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture canonical of Reg
+# -- Compiling entity TB_Reg
+# -- Compiling architecture testbench of TB_Reg
+# Compile of TB_Reg.vht was successful.
+# Compile of Reg.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror work.tb_reg

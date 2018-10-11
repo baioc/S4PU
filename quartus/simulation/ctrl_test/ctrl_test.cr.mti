@@ -1,0 +1,17 @@
+/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Control.vht {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/testbench/TB_Control.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TB_Control
+-- Compiling architecture testbench of TB_Control
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity S4PU_Control
+-- Compiling architecture fsm_v0 of S4PU_Control
+
+} {} {}}

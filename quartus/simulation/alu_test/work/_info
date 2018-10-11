@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+d/home/baioc
+Ealu_16
+Z0 w1539119996
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/simulation/alu_test
+Z5 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+Z6 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+l0
+L18
+VW;RQ`a=HDiZ24K^=^eUP;1
+!s100 ]FX2DL2`2SEHfQcoSDcLg2
+Z7 OV;C;10.1d;51
+32
+!i10b 1
+Z8 !s108 1539120527.751319
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
+Z10 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Aparallel
+R1
+R2
+R3
+Z13 DEx4 work 6 alu_16 0 22 W;RQ`a=HDiZ24K^=^eUP;1
+l69
+L38
+VRzC^7ZW0ARczV?YXk^=Z42
+!s100 H:ITk>Izj@_OS9^mOznML1
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Aparallel_16
+R1
+R2
+R3
+R13
+32
+l57
+L26
+V<b;ikk@YBW:ncaHM[Mhl33
+R7
+!s108 1538857508.222913
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
+!s107 /mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
+R11
+R12
+d/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/simulation/alu_test
+F/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+w1538856363
+8/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+!i10b 1
+!s100 l]ahz3;K2hDio@TM=Fn_a1
+Etb_alu
+Z14 w1539120144
+R1
+R2
+R3
+R4
+Z15 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht
+Z16 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht
+l0
+L18
+VW2LnPh4<QRNO<a_^CTI:O3
+R7
+32
+Z17 !s108 1539120527.641131
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht|
+Z19 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/testbench/TB_ALU.vht|
+R11
+R12
+!s100 e9RU<C0HY2SLgO:7;@3371
+!i10b 1
+Atestbench_16
+R1
+R2
+R3
+DEx4 work 6 tb_alu 0 22 W2LnPh4<QRNO<a_^CTI:O3
+l71
+L22
+VJ16ozc>MP:K4LMz@<BTSh1
+R7
+32
+R17
+R18
+R19
+R11
+R12
+!s100 YEz_:D4<k;IAi`WGoN_zQ0
+!i10b 1

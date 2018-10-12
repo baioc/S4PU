@@ -69,7 +69,7 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 		);
 	END component;
 
-	component prog_rom IS	-- Altera Quartus wizard-generated single-port ROM from ./memory/prog.hex
+	component prog_rom IS	-- Altera Quartus wizard-generated single-port ROM from ./memory/prog.mif
 		PORT
 		(
 			address	: IN STD_LOGIC_VECTOR (12 DOWNTO 0);
@@ -96,9 +96,15 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 			 rs_overflow, rs_underflow,
 			 ds_overflow, ds_underflow: std_logic;
 
-	signal cpu_address, cpu_readdata, cpu_writedata,
+	signal cpu_address, address_range,
+			 cpu_readdata, cpu_writedata,
 			 main_mem_address, main_mem_q,
 			 prog_mem_address, prog_mem_q: std_logic_vector(ARCH-1 downto 0);
+
+
+	-- INTERNAL STATE --
+	subtype InternalState is std_logic_vector(ARCH-1 downto 0);
+	signal curr_state: InternalState;
 
 
 	-- DESCRIPTION --
@@ -167,10 +173,27 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 		write <= '1' when cpu_write='1' and (unsigned(cpu_address) >= EXT_MEM_START) and (unsigned(cpu_address) <= EXT_MEM_END)
 					else '0';
 
-		cpu_readdata <= main_mem_q when (unsigned(cpu_address) >= MAIN_MEM_START) and (unsigned(cpu_address) <= MAIN_MEM_END) else
-							 prog_mem_q when (unsigned(cpu_address) >= PROG_MEM_START) and (unsigned(cpu_address) <= PROG_MEM_END) else
-							 readdata when (unsigned(cpu_address) >= EXT_MEM_START) and (unsigned(cpu_address) <= EXT_MEM_END) else
-							 (others => '1');	-- undefined
+		-- address register
+		ME: process (clock, reset_n) is
+			begin
+				if (reset_n = '0') then
+					curr_state <= (others => '0');
+				elsif (rising_edge(clock)) then
+					curr_state <= cpu_address;
+				end if;
+		end process;
+
+		-- output logic
+		address_range <= curr_state when cpu_write='1'
+							  else cpu_address;	-- bypass register when not writing
+
+		cpu_readdata <= main_mem_q when (unsigned(address_range) >= MAIN_MEM_START)
+											and (unsigned(address_range) <= MAIN_MEM_END) else
+							 prog_mem_q when (unsigned(address_range) >= PROG_MEM_START)
+											and (unsigned(address_range) <= PROG_MEM_END) else
+							 readdata when (unsigned(address_range) >= EXT_MEM_START)
+											and (unsigned(address_range) <= EXT_MEM_END)
+							 else (others => '1'); -- undefined
 
 end architecture;
 

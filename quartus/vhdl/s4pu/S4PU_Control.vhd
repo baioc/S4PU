@@ -82,7 +82,7 @@ architecture fsm_v0 of S4PU_Control is	-- default
 	) return InternalState is
 		variable goto_state: InternalState;
 			begin
-				if (inst(inst'left) = '0') then
+				if (inst(inst'right) = '0') then
 					goto_state := CALL;
 
 				elsif (inst = x"8001") then
@@ -321,7 +321,7 @@ architecture fsm_v0 of S4PU_Control is	-- default
 		with curr_state select pc_load <=
 			'0' when LOAD_0|STORE_0|PICK_0|SWAP_0,
 			'1' when RESET|FETCH|CALL|IF_FALSE|IF_TRUE|BRANCH|RET|LIT,
-			instruction(instruction'left) when others; -- g(instruction)
+			instruction(instruction'right) when others; -- g(instruction)
 
 		with curr_state select sel_pc_D <=
 			("00" & mode) when RESET,		-- h(mode)

@@ -1,5 +1,5 @@
 MIF/HEX Update report for S4PU-16
-Wed Oct 10 20:14:05 2018
+Fri Oct 12 17:09:38 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; MIF/HEX Update Summary                                        ;
 +-----------------------+---------------------------------------+
-; MIF/HEX Update Status ; Successful - Wed Oct 10 20:14:05 2018 ;
+; MIF/HEX Update Status ; Successful - Fri Oct 12 17:09:38 2018 ;
 ; Revision Name         ; S4PU-16                               ;
 ; Top-level Entity Name ; S4PU_Daughterboard                    ;
 ; Family                ; Cyclone II                            ;
@@ -48,7 +48,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; File Name                                                               ;
 +-------------------------------------------------------------------------+
-; /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/memory/prog.hex ;
+; /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/memory/prog.mif ;
 +-------------------------------------------------------------------------+
 
 
@@ -58,14 +58,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit MIF/HEX Update
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 10 20:14:02 2018
+    Info: Processing started: Fri Oct 12 17:09:37 2018
 Info: Command: quartus_cdb S4PU-16 -c S4PU-16 --update_mif
 Info (39024): Processed the following Memory Initialization File(s)
-    Info (39025): Processed Memory Initialization File /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/memory/prog.hex
+    Info (39025): Processed Memory Initialization File /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/memory/prog.mif
 Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 843 megabytes
-    Info: Processing ended: Wed Oct 10 20:14:06 2018
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 846 megabytes
+    Info: Processing ended: Fri Oct 12 17:09:38 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

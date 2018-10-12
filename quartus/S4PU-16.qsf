@@ -481,6 +481,9 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL OFF
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS NOT_USED -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TB_Mux -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE vhdl/s4pu/S4PU_Datapath.vhd
 set_global_assignment -name VHDL_FILE vhdl/combinatorial/Multiplexer.vhd
 set_global_assignment -name VHDL_FILE vhdl/sequential/Reg.vhd
@@ -498,8 +501,5 @@ set_global_assignment -name VHDL_TEST_BENCH_FILE testbench/TB_Control.vht
 set_global_assignment -name VHDL_FILE vhdl/s4pu/S4PU_Daughterboard.vhd
 set_global_assignment -name QIP_FILE magic/main_ram/main_ram.qip
 set_global_assignment -name QIP_FILE magic/prog_rom/prog_rom.qip
-set_global_assignment -name HEX_FILE memory/prog.hex
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIF_FILE memory/prog.mif
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

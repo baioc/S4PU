@@ -1,4 +1,22 @@
-/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
+/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Multiplexer
+-- Compiling architecture vectorial of Multiplexer
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onchip_ram
+-- Compiling architecture SYN of onchip_ram
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,24 +33,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity main_ram
 -- Compiling architecture SYN of main_ram
 
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity ALU_16
--- Compiling architecture parallel of ALU_16
-
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity S4PU_Datapath
--- Compiling architecture operative_v0 of S4PU_Datapath
+-- Compiling entity S4PU_Control
+-- Compiling architecture fsm_v0 of S4PU_Control
 
 } {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -42,21 +49,14 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity S4PU
 -- Compiling architecture composite of S4PU
 
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Reg
--- Compiling architecture canonical of Reg
-
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity onchip_ram
--- Compiling architecture SYN of onchip_ram
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_16
+-- Compiling architecture parallel of ALU_16
 
 } {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -66,23 +66,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity prog_rom
 -- Compiling architecture SYN of prog_rom
 
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity Multiplexer
--- Compiling architecture vectorial of Multiplexer
-
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity S4PU_Control
--- Compiling architecture fsm_v0 of S4PU_Control
+-- Compiling entity Reg
+-- Compiling architecture canonical of Reg
 
 } {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -93,5 +83,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package MATH_REAL
 -- Compiling entity LIFO_Stack
 -- Compiling architecture altera_onchip of LIFO_Stack
+
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity S4PU_Datapath
+-- Compiling architecture operative_v0 of S4PU_Datapath
 
 } {} {}}

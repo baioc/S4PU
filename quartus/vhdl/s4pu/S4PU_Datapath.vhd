@@ -126,10 +126,10 @@ architecture operative_v0 of S4PU_Datapath is	-- default
 
 	-- SIGNALS --
 	signal alu_A_sig, alu_Y_sig, tos_sig,
-		   ds_in_sig, ds_out_sig,
-		   rs_in_sig, rs_out_sig,
-		   pc_D_sig, pc_Q_sig, final_pc_D_sig,
-		   cir_sig: std_logic_vector(ARCH-1 downto 0);
+		    ds_in_sig, ds_out_sig,
+		    rs_in_sig, rs_out_sig,
+		    pc_D_sig, pc_Q_sig, final_pc_D_sig,
+		    cir_sig: std_logic_vector(ARCH-1 downto 0);
 
 	signal ds_offset_sig: std_logic_vector(ADDR-1 downto 0);
 

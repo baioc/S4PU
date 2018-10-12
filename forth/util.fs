@@ -13,16 +13,15 @@
 	DROP DROP
 ;
 
-: EMIT	( u -- )
-	IOWR @ !
+: EMIT	( s -- )
+	_STDOUT !
 ;
 
 : KEY	( -- k )
-	IORD @ @
+	_STDIN @
 ;
 
 : COUNTDOWN	( u -- )
-	ABS
 	DUP 0= NOT IF
 		1- WAIT
 	THEN DROP

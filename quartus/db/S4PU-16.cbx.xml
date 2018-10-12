@@ -4,6 +4,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|S4PU_Daughterboard|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:DATA_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|S4PU_Daughterboard|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:RETURN_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|S4PU_Daughterboard|main_ram:MAIN_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l1b1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|S4PU_Daughterboard|prog_rom:PROGRAM_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_1i81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|S4PU_Daughterboard|prog_rom:PROGRAM_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_oh81.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

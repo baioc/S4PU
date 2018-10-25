@@ -1,5 +1,5 @@
 Flow report for S4PU-16
-Fri Oct 12 17:09:38 2018
+Fri Oct 19 20:35:28 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 12 17:09:38 2018           ;
+; Flow Status                        ; Successful - Fri Oct 19 20:35:28 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; S4PU-16                                         ;
-; Top-level Entity Name              ; S4PU_Daughterboard                              ;
+; Top-level Entity Name              ; DE2                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 721 / 33,216 ( 2 % )                            ;
-;     Total combinational functions  ; 714 / 33,216 ( 2 % )                            ;
-;     Dedicated logic registers      ; 112 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 112                                             ;
-; Total pins                         ; 53 / 475 ( 11 % )                               ;
+; Total logic elements               ; 741 / 33,216 ( 2 % )                            ;
+;     Total combinational functions  ; 735 / 33,216 ( 2 % )                            ;
+;     Dedicated logic registers      ; 121 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 121                                             ;
+; Total pins                         ; 36 / 475 ( 8 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 344,064 / 483,840 ( 71 % )                      ;
+; Total memory bits                  ; 335,872 / 483,840 ( 69 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,48 +64,128 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2018 17:08:00 ;
+; Start date & time ; 10/19/2018 20:34:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; S4PU-16             ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                   ;
-+--------------------------------------+---------------------------------------+---------------+--------------------+----------------+
-; Assignment Name                      ; Value                                 ; Default Value ; Entity Name        ; Section Id     ;
-+--------------------------------------+---------------------------------------+---------------+--------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 0.153937488010878                     ; --            ; --                 ; --             ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_Mux                                ; --            ; --                 ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --                 ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --                 ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                              ; --            ; --                 ; eda_simulation ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                           ; --            ; --                 ; --             ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                           ; --            ; --                 ; --             ;
-; IP_TOOL_NAME                         ; ROM: 1-PORT                           ; --            ; --                 ; --             ;
-; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --                 ; --             ;
-; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --                 ; --             ;
-; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --                 ; --             ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --                 ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/onchip_ram/onchip_ram_inst.vhd  ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/onchip_ram/onchip_ram.inc       ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/onchip_ram/onchip_ram.cmp       ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/onchip_ram/onchip_ram_syn.v     ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/main_ram/main_ram.bsf           ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/main_ram/main_ram.cmp           ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/main_ram/main_ram_syn.v         ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/prog_rom/prog_rom.bsf           ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/prog_rom/prog_rom.cmp           ; --            ; --                 ; --             ;
-; MISC_FILE                            ; magic/prog_rom/prog_rom_syn.v         ; --            ; --                 ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; S4PU_Daughterboard ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; S4PU_Daughterboard ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; S4PU_Daughterboard ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --                 ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                 ; --             ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --                 ; --             ;
-; TOP_LEVEL_ENTITY                     ; S4PU_Daughterboard                    ; S4PU-16       ; --                 ; --             ;
-+--------------------------------------+---------------------------------------+---------------+--------------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                        ;
++--------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+----------------+
+; Assignment Name                      ; Value                                                         ; Default Value ; Entity Name                     ; Section Id     ;
++--------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 0.153999205912704                                             ; --            ; --                              ; --             ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_Mux                                                        ; --            ; --                              ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                          ; --            ; --                              ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                        ; <None>        ; --                              ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                                                      ; --            ; --                              ; eda_simulation ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_avalon_sc_fifo           ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_merlin_master_agent      ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_merlin_master_translator ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_merlin_slave_agent       ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_merlin_slave_translator  ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_merlin_traffic_limiter   ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; altera_reset_controller         ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration                     ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_addr_router         ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_addr_router_001     ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_cmd_xbar_demux      ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_cmd_xbar_demux_001  ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_cmd_xbar_mux        ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_id_router           ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_id_router_002       ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_irq_mapper          ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_jtag_uart           ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_led_pio             ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_nios2_cpu           ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_onchip_mem_nios2    ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_rsp_xbar_demux      ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_rsp_xbar_demux_002  ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_rsp_xbar_mux        ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_rsp_xbar_mux_001    ; --             ;
+; IP_TOOL_ENV                          ; Qsys                                                          ; --            ; integration_sysid               ; --             ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                                   ; --            ; --                              ; --             ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                                   ; --            ; --                              ; --             ;
+; IP_TOOL_NAME                         ; ROM: 1-PORT                                                   ; --            ; --                              ; --             ;
+; IP_TOOL_NAME                         ; altera_avalon_sc_fifo                                         ; --            ; altera_avalon_sc_fifo           ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_master_agent                                    ; --            ; altera_merlin_master_agent      ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_master_translator                               ; --            ; altera_merlin_master_translator ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_slave_agent                                     ; --            ; altera_merlin_slave_agent       ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_slave_translator                                ; --            ; altera_merlin_slave_translator  ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_traffic_limiter                                 ; --            ; altera_merlin_traffic_limiter   ; --             ;
+; IP_TOOL_NAME                         ; altera_reset_controller                                       ; --            ; altera_reset_controller         ; --             ;
+; IP_TOOL_NAME                         ; Qsys                                                          ; --            ; integration                     ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                          ; --            ; integration_addr_router         ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                          ; --            ; integration_addr_router_001     ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                   ; --            ; integration_cmd_xbar_demux      ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                   ; --            ; integration_cmd_xbar_demux_001  ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                     ; --            ; integration_cmd_xbar_mux        ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                          ; --            ; integration_id_router           ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_router                                          ; --            ; integration_id_router_002       ; --             ;
+; IP_TOOL_NAME                         ; altera_irq_mapper                                             ; --            ; integration_irq_mapper          ; --             ;
+; IP_TOOL_NAME                         ; altera_avalon_jtag_uart                                       ; --            ; integration_jtag_uart           ; --             ;
+; IP_TOOL_NAME                         ; altera_avalon_pio                                             ; --            ; integration_led_pio             ; --             ;
+; IP_TOOL_NAME                         ; altera_nios2_qsys                                             ; --            ; integration_nios2_cpu           ; --             ;
+; IP_TOOL_NAME                         ; altera_avalon_onchip_memory2                                  ; --            ; integration_onchip_mem_nios2    ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                   ; --            ; integration_rsp_xbar_demux      ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_demultiplexer                                   ; --            ; integration_rsp_xbar_demux_002  ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                     ; --            ; integration_rsp_xbar_mux        ; --             ;
+; IP_TOOL_NAME                         ; altera_merlin_multiplexer                                     ; --            ; integration_rsp_xbar_mux_001    ; --             ;
+; IP_TOOL_NAME                         ; altera_avalon_sysid_qsys                                      ; --            ; integration_sysid               ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; --                              ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; --                              ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; --                              ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_avalon_sc_fifo           ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_merlin_master_agent      ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_merlin_master_translator ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_merlin_slave_agent       ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_merlin_slave_translator  ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_merlin_traffic_limiter   ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; altera_reset_controller         ; --             ;
+; IP_TOOL_VERSION                      ; 13.0sp1                                                       ; --            ; integration                     ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_addr_router         ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_addr_router_001     ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_cmd_xbar_demux      ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_cmd_xbar_demux_001  ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_cmd_xbar_mux        ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_id_router           ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_id_router_002       ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_irq_mapper          ; --             ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                   ; --            ; integration_jtag_uart           ; --             ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                   ; --            ; integration_led_pio             ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_nios2_cpu           ; --             ;
+; IP_TOOL_VERSION                      ; 13.0.1.99.2                                                   ; --            ; integration_onchip_mem_nios2    ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_rsp_xbar_demux      ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_rsp_xbar_demux_002  ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_rsp_xbar_mux        ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_rsp_xbar_mux_001    ; --             ;
+; IP_TOOL_VERSION                      ; 13.0                                                          ; --            ; integration_sysid               ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                            ; --            ; --                              ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                             ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/onchip_ram/onchip_ram_inst.vhd                          ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/onchip_ram/onchip_ram.inc                               ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/onchip_ram/onchip_ram.cmp                               ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/onchip_ram/onchip_ram_syn.v                             ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/main_ram/main_ram.bsf                                   ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/main_ram/main_ram.cmp                                   ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/main_ram/main_ram_syn.v                                 ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/prog_rom/prog_rom.bsf                                   ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/prog_rom/prog_rom.cmp                                   ; --            ; --                              ; --             ;
+; MISC_FILE                            ; magic/prog_rom/prog_rom_syn.v                                 ; --            ; --                              ; --             ;
+; MISC_FILE                            ; integration/synthesis/../../integration.cmp                   ; --            ; --                              ; --             ;
+; MISC_FILE                            ; integration/synthesis/../../integration.qsys                  ; --            ; --                              ; --             ;
+; PARTITION_COLOR                      ; 16764057                                                      ; --            ; DE2                             ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                         ; --            ; DE2                             ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                        ; --            ; DE2                             ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                           ; --            ; --                              ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                         ; --            ; --                              ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                  ; --            ; --                              ; --             ;
+; SLD_INFO                             ; QSYS_NAME integration HAS_SOPCINFO 1 GENERATION_ID 1539949976 ; --            ; integration                     ; --             ;
+; SOPCINFO_FILE                        ; integration/synthesis/../../integration.sopcinfo              ; --            ; --                              ; --             ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                            ; --            ; --                              ; --             ;
+; TOP_LEVEL_ENTITY                     ; DE2                                                           ; S4PU-16       ; --                              ; --             ;
++--------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -113,13 +193,13 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 645 MB              ; 00:00:08                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 720 MB              ; 00:00:13                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 555 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 511 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 805 MB              ; 00:00:01                           ;
-; MIF/HEX Update            ; 00:00:01     ; 1.0                     ; 846 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 657 MB              ; 00:00:06                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 718 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 551 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 501 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 805 MB              ; 00:00:01                           ;
+; MIF/HEX Update            ; 00:00:01     ; 1.0                     ; 850 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:23                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,163 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/ --output-directory=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration/ --report-file=bsf:/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.qsys
+Progress: Loading qsys/integration.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.0]
+Progress: Parameterizing module clock
+Progress: Adding onchip_mem_nios2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem_nios2
+Progress: Adding nios2_cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding led_pio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_pio
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: integration.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: integration.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/ --output-directory=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.sopcinfo --report-file=html:/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.html --report-file=qip:/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration/synthesis/integration.qip --report-file=cmp:/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration.qsys --language=VHDL
+Progress: Loading qsys/integration.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.0]
+Progress: Parameterizing module clock
+Progress: Adding onchip_mem_nios2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem_nios2
+Progress: Adding nios2_cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding led_pio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_pio
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: integration.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: integration.sysid: Time stamp will be automatically updated when this component is generated.
+Info: integration: Generating integration "integration" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 18 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 13 modules, 39 connections
+Info: merlin_domain_transform: After transform: 26 modules, 106 connections
+Info: merlin_router_transform: After transform: 33 modules, 127 connections
+Info: merlin_traffic_limiter_transform: After transform: 34 modules, 131 connections
+Info: reset_adaptation_transform: After transform: 35 modules, 133 connections
+Info: merlin_network_to_switch_transform: After transform: 48 modules, 161 connections
+Info: limiter_update_transform: After transform: 48 modules, 162 connections
+Info: merlin_mm_transform: After transform: 48 modules, 162 connections
+Info: merlin_interrupt_mapper_transform: After transform: 49 modules, 165 connections
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: integration: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: onchip_mem_nios2: Starting RTL generation for module 'integration_onchip_mem_nios2'
+Info: onchip_mem_nios2:   Generation command is [exec /opt/altera/13.0sp1/quartus/linux/perl/bin/perl -I /opt/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/europa -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/13.0sp1/quartus/sopc_builder/bin -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=integration_onchip_mem_nios2 --dir=/tmp/alt7823_9187284386533648433.dir/0001_onchip_mem_nios2_gen/ --quartus_dir=/opt/altera/13.0sp1/quartus --verilog --config=/tmp/alt7823_9187284386533648433.dir/0001_onchip_mem_nios2_gen//integration_onchip_mem_nios2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem_nios2: Done RTL generation for module 'integration_onchip_mem_nios2'
+Info: onchip_mem_nios2: "integration" instantiated altera_avalon_onchip_memory2 "onchip_mem_nios2"
+Info: nios2_cpu: Starting RTL generation for module 'integration_nios2_cpu'
+Info: nios2_cpu:   Generation command is [exec /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /opt/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/europa -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/13.0sp1/quartus/sopc_builder/bin -I /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /opt/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=integration_nios2_cpu --dir=/tmp/alt7823_9187284386533648433.dir/0002_nios2_cpu_gen/ --quartus_dir=/opt/altera/13.0sp1/quartus --verilog --config=/tmp/alt7823_9187284386533648433.dir/0002_nios2_cpu_gen//integration_nios2_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_cpu: # 2018.10.18 22:15:29 (*) Starting Nios II generation
+Info: nios2_cpu: # 2018.10.18 22:15:29 (*)   Checking for plaintext license.
+Info: nios2_cpu: # 2018.10.18 22:15:30 (*)   Couldn't query license setup in Quartus directory /opt/altera/13.0sp1/quartus
+Info: nios2_cpu: # 2018.10.18 22:15:30 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_cpu: # 2018.10.18 22:15:30 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_cpu: # 2018.10.18 22:15:30 (*)   Plaintext license not found.
+Info: nios2_cpu: # 2018.10.18 22:15:30 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   Couldn't query license setup in Quartus directory /opt/altera/13.0sp1/quartus
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   Elaborating CPU configuration settings
+Info: nios2_cpu: # 2018.10.18 22:15:31 (*)   Creating all objects for CPU
+Info: nios2_cpu: # 2018.10.18 22:15:32 (*)     Pipeline frontend
+Info: nios2_cpu: # 2018.10.18 22:15:33 (*)   Generating RTL from CPU objects
+Info: nios2_cpu: # 2018.10.18 22:15:35 (*)   Creating encrypted RTL
+Info: nios2_cpu: # 2018.10.18 22:15:36 (*) Done Nios II generation
+Info: nios2_cpu: Done RTL generation for module 'integration_nios2_cpu'
+Info: nios2_cpu: "integration" instantiated altera_nios2_qsys "nios2_cpu"
+Info: jtag_uart: Starting RTL generation for module 'integration_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /opt/altera/13.0sp1/quartus/linux/perl/bin/perl -I /opt/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/europa -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/13.0sp1/quartus/sopc_builder/bin -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=integration_jtag_uart --dir=/tmp/alt7823_9187284386533648433.dir/0003_jtag_uart_gen/ --quartus_dir=/opt/altera/13.0sp1/quartus --verilog --config=/tmp/alt7823_9187284386533648433.dir/0003_jtag_uart_gen//integration_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'integration_jtag_uart'
+Info: jtag_uart: "integration" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: sysid: "integration" instantiated altera_avalon_sysid_qsys "sysid"
+Info: led_pio: Starting RTL generation for module 'integration_led_pio'
+Info: led_pio:   Generation command is [exec /opt/altera/13.0sp1/quartus/linux/perl/bin/perl -I /opt/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/europa -I /opt/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/13.0sp1/quartus/sopc_builder/bin -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=integration_led_pio --dir=/tmp/alt7823_9187284386533648433.dir/0005_led_pio_gen/ --quartus_dir=/opt/altera/13.0sp1/quartus --verilog --config=/tmp/alt7823_9187284386533648433.dir/0005_led_pio_gen//integration_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'integration_led_pio'
+Info: led_pio: "integration" instantiated altera_avalon_pio "led_pio"
+Info: nios2_cpu_instruction_master_translator: "integration" instantiated altera_merlin_master_translator "nios2_cpu_instruction_master_translator"
+Info: nios2_cpu_jtag_debug_module_translator: "integration" instantiated altera_merlin_slave_translator "nios2_cpu_jtag_debug_module_translator"
+Info: nios2_cpu_instruction_master_translator_avalon_universal_master_0_agent: "integration" instantiated altera_merlin_master_agent "nios2_cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "integration" instantiated altera_merlin_slave_agent "nios2_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "integration" instantiated altera_avalon_sc_fifo "nios2_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "integration" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "integration" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "integration" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "integration" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "integration" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "integration" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "integration" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "integration" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "integration" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "integration" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "integration" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "integration" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "integration" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file /home/baioc/Documents/Computacao/Projetos/S4PU/quartus/qsys/integration/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "integration" instantiated altera_irq_mapper "irq_mapper"
+Info: integration: Done integration" with 25 modules, 82 files, 1727691 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

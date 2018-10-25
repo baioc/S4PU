@@ -133,7 +133,7 @@ END SYN;
 -- Retrieval info: PRIVATE: INIT_TO_SIM_X NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
--- Retrieval info: PRIVATE: JTAG_ID STRING "MAIN"
+-- Retrieval info: PRIVATE: JTAG_ID STRING "RAM"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 -- Retrieval info: PRIVATE: MIFfilename STRING ""
 -- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "16384"

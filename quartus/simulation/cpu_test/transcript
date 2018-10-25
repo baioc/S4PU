@@ -40,6 +40,7 @@ vcom -work work -refresh -force_refresh
 # -- Compiling architecture operative_v0 of S4PU_Datapath
 # -- Compiling entity S4PU_Daughterboard
 # -- Compiling architecture embedded_v0 of S4PU_Daughterboard
+# Compile of DE2.vhd was successful.
 # Compile of S4PU_Daughterboard.vhd was successful.
 # Compile of main_ram.vhd was successful.
 # Compile of prog_rom.vhd was successful.
@@ -51,5 +52,5 @@ vcom -work work -refresh -force_refresh
 # Compile of Reg.vhd was successful.
 # Compile of Multiplexer.vhd was successful.
 # Compile of ALU_16.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror -sdfnowarn work.s4pu_daughterboard
+# 12 compiles, 0 failed with no errors. 
+vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror -sdfnowarn work.de2(stack_computer)

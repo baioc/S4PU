@@ -72,7 +72,7 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 	component prog_rom IS	-- Altera Quartus wizard-generated single-port ROM from ./memory/prog.mif
 		PORT
 		(
-			address	: IN STD_LOGIC_VECTOR (12 DOWNTO 0);
+			address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
 			clock		: IN STD_LOGIC  := '1';
 			q			: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
 		);
@@ -84,15 +84,15 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 	constant PROG_MEM_START: natural := 32768;
 	constant EXT_MEM_START: natural := 41984;
 
-	-- @XXX DE2 COULDN'T FIT THE DESIGN SO BOARD MEMORY WAS CUT IN HALF
-	constant MAIN_MEM_END: natural := MAIN_MEM_START + 16383;
-	constant PROG_MEM_END: natural := PROG_MEM_START + 4607;
-	constant EXT_MEM_END: natural := EXT_MEM_START + 23551;
+	-- @XXX DE2 COULDN'T FIT THE DESIGN SO BOARD MEMORY WAS CUT
+	constant MAIN_MEM_END: natural := MAIN_MEM_START + 16383;	-- 16Ki
+	constant PROG_MEM_END: natural := PROG_MEM_START + 4095;		-- 4Ki
+	constant EXT_MEM_END: natural := EXT_MEM_START + 23551;		-- xA400 - xFFFF
 
 
 	-- SIGNALS --
-	signal main_mem_wren,
-			 cpu_reset_n, cpu_read, cpu_write,
+	signal main_mem_wren, cpu_reset_n,
+			 cpu_read, cpu_write,
 			 rs_overflow, rs_underflow,
 			 ds_overflow, ds_underflow: std_logic;
 
@@ -104,7 +104,7 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 
 	-- INTERNAL STATE --
 	subtype InternalState is std_logic_vector(ARCH-1 downto 0);
-	signal curr_state: InternalState;
+	signal last_address: InternalState;
 
 
 	-- DESCRIPTION --
@@ -147,14 +147,15 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 
 		PROGRAM_MEMORY: prog_rom
 			port map (
-				address => prog_mem_address(12 DOWNTO 0),
+				address => prog_mem_address(11 downto 0),
 				clock => clock,
-				q => prog_mem_q(15 DOWNTO 0)
+				q => prog_mem_q(15 downto 0)
 			);
 
 
 		-- BEHAVIOUR --
 		writedata <= cpu_writedata;
+		address <= cpu_address;
 
 		-- @note stack errors are treated as critical errors that reset the cpu
 		cpu_reset_n <= reset_n and not(rs_overflow or rs_underflow or ds_overflow or ds_underflow);
@@ -162,7 +163,6 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 		-- address range conversion
 		main_mem_address <= std_logic_vector(unsigned(cpu_address) - MAIN_MEM_START);
 		prog_mem_address <= std_logic_vector(unsigned(cpu_address) - PROG_MEM_START);
-		address <= std_logic_vector(unsigned(cpu_address) - EXT_MEM_START);
 
 		-- memory mapping
 		main_mem_wren <= '1' when cpu_write='1' and (unsigned(cpu_address) >= MAIN_MEM_START) and (unsigned(cpu_address) <= MAIN_MEM_END)
@@ -177,15 +177,15 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 		ME: process (clock, reset_n) is
 			begin
 				if (reset_n = '0') then
-					curr_state <= (others => '0');
+					last_address <= (others => '0');
 				elsif (rising_edge(clock)) then
-					curr_state <= cpu_address;
+					last_address <= cpu_address;
 				end if;
 		end process;
 
 		-- output logic
-		address_range <= curr_state when cpu_write='1'
-							  else cpu_address;	-- bypass register when not writing
+		address_range <= last_address when cpu_write='1' or (cpu_read='1' and (unsigned(cpu_address)-unsigned(last_address) /= 1))
+							  else cpu_address;	-- bypass register when not reading consecutively
 
 		cpu_readdata <= main_mem_q when (unsigned(address_range) >= MAIN_MEM_START)
 											and (unsigned(address_range) <= MAIN_MEM_END) else
@@ -196,4 +196,3 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 							 else (others => '1'); -- undefined
 
 end architecture;
-

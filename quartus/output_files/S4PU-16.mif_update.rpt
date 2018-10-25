@@ -1,5 +1,5 @@
 MIF/HEX Update report for S4PU-16
-Fri Oct 12 17:09:38 2018
+Fri Oct 19 20:35:28 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,9 +35,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; MIF/HEX Update Summary                                        ;
 +-----------------------+---------------------------------------+
-; MIF/HEX Update Status ; Successful - Fri Oct 12 17:09:38 2018 ;
+; MIF/HEX Update Status ; Successful - Fri Oct 19 20:35:28 2018 ;
 ; Revision Name         ; S4PU-16                               ;
-; Top-level Entity Name ; S4PU_Daughterboard                    ;
+; Top-level Entity Name ; DE2                                   ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C35F672C6                          ;
 +-----------------------+---------------------------------------+
@@ -58,13 +58,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit MIF/HEX Update
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 12 17:09:37 2018
+    Info: Processing started: Fri Oct 19 20:35:27 2018
 Info: Command: quartus_cdb S4PU-16 -c S4PU-16 --update_mif
 Info (39024): Processed the following Memory Initialization File(s)
     Info (39025): Processed Memory Initialization File /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/memory/prog.mif
 Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 846 megabytes
-    Info: Processing ended: Fri Oct 12 17:09:38 2018
+    Info: Peak virtual memory: 850 megabytes
+    Info: Processing ended: Fri Oct 19 20:35:28 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

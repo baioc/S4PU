@@ -1,0 +1,77 @@
+set_global_assignment -entity "integration" -library "integration" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "integration" -library "integration" -name IP_TOOL_VERSION "13.0sp1"
+set_global_assignment -entity "integration" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "integration" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../integration.sopcinfo"]
+set_instance_assignment -entity "integration" -library "integration" -name SLD_INFO "QSYS_NAME integration HAS_SOPCINFO 1 GENERATION_ID 1540611474"
+set_global_assignment -library "integration" -name MISC_FILE [file join $::quartus(qip_path) "../../integration.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "integration" -name MISC_FILE [file join $::quartus(qip_path) "../../integration.qsys"]
+
+set_global_assignment -library "integration" -name VHDL_FILE [file join $::quartus(qip_path) "integration.vhd"]
+set_global_assignment -library "integration" -name VHDL_FILE [file join $::quartus(qip_path) "integration_pio_led_s1_translator.vhd"]
+set_global_assignment -library "integration" -name VHDL_FILE [file join $::quartus(qip_path) "integration_pio_sw_s1_translator.vhd"]
+set_global_assignment -library "integration" -name VHDL_FILE [file join $::quartus(qip_path) "integration_width_adapter.vhd"]
+set_global_assignment -library "integration" -name VHDL_FILE [file join $::quartus(qip_path) "integration_width_adapter_001.vhd"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_rsp_xbar_mux.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_rsp_xbar_demux.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_cmd_xbar_demux.sv"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "integration" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_id_router.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_addr_router.sv"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "integration" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_pio_sw.v"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_pio_led.v"]
+set_global_assignment -library "integration" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/integration_s4pu_ebab.v"]
+
+set_global_assignment -entity "altera_merlin_width_adapter" -library "integration" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_rsp_xbar_mux" -library "integration" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "integration_rsp_xbar_mux" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "integration_rsp_xbar_mux" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_rsp_xbar_demux" -library "integration" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "integration_rsp_xbar_demux" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "integration_rsp_xbar_demux" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_cmd_xbar_demux" -library "integration" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "integration_cmd_xbar_demux" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "integration_cmd_xbar_demux" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "integration" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_id_router" -library "integration" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "integration_id_router" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "integration_id_router" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_addr_router" -library "integration" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "integration_addr_router" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "integration_addr_router" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "integration" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "integration" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "integration" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "integration" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "integration" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "integration" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_pio_sw" -library "integration" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "integration_pio_sw" -library "integration" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "integration_pio_sw" -library "integration" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "integration_pio_led" -library "integration" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "integration_pio_led" -library "integration" -name IP_TOOL_VERSION "13.0.1.99.2"
+set_global_assignment -entity "integration_pio_led" -library "integration" -name IP_TOOL_ENV "Qsys"

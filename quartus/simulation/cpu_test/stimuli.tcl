@@ -1,7 +1,7 @@
 restart -f
 
 force /CLOCK_50 0 0ns, 1 10ns -r 20ns
-force /KEY 1 15ns
+force /KEY 1 0ns
 force /SW 2000D 0ns
 
 run @2ms

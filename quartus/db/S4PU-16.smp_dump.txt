@@ -1,5 +1,5 @@
 
-State Machine - |DE2|S4PU_Daughterboard:U0|S4PU:CPU|S4PU_Control:CONTROL_BLOCK|curr_state
+State Machine - |FPGA|S4PU_Daughterboard:U1|S4PU:CPU|S4PU_Control:CONTROL_BLOCK|curr_state
 Name curr_state.ALU_SBR curr_state.ALU_SBL curr_state.SWAP_1 curr_state.SWAP_0 curr_state.DUP curr_state.ALU_SAR curr_state.ALU_SAL curr_state.ALU_POS curr_state.ALU_NEG curr_state.ALU_ZER curr_state.ALU_GREATER curr_state.ALU_LESS curr_state.ALU_EQUAL curr_state.ALU_DEC curr_state.ALU_INC curr_state.ALU_SUB curr_state.ALU_ADD curr_state.ALU_XOR curr_state.ALU_AND curr_state.ALU_OR curr_state.ALU_NOT curr_state.R_FROM curr_state.TO_R curr_state.PICK_1 curr_state.PICK_0 curr_state.LIT curr_state.DROP curr_state.RET curr_state.BRANCH curr_state.IF_TRUE curr_state.IF_FALSE curr_state.STORE_1 curr_state.STORE_0 curr_state.LOAD_1 curr_state.LOAD_0 curr_state.CALL curr_state.DECODE curr_state.FETCH curr_state.RESET 
 curr_state.RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 curr_state.FETCH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 

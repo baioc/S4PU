@@ -1,6 +1,22 @@
+# Compile of FPGA.vhd was successful.
+# Compile of S4PU_Daughterboard.vhd was successful.
+# Compile of main_ram.vhd was successful.
+# Compile of prog_rom.vhd was successful.
+# Compile of S4PU.vhd was successful.
+# Compile of S4PU_Control.vhd was successful.
+# Compile of S4PU_Datapath.vhd was successful.
+# Compile of LIFO_Stack.vhd was successful.
+# Compile of onchip_ram.vhd was successful.
+# Compile of Reg.vhd was successful.
+# Compile of Multiplexer.vhd was successful.
+# Compile of ALU_16.vhd was successful.
+# 12 compiles, 0 failed with no errors. 
+# Load canceled
 vlog -work work -refresh -force_refresh
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Skipping entity alu_16
+# -- Skipping entity de2
+# -- Skipping entity fpga
 # -- Skipping entity lifo_stack
 # -- Skipping entity main_ram
 # -- Skipping entity multiplexer
@@ -19,6 +35,12 @@ vcom -work work -refresh -force_refresh
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_16
 # -- Compiling architecture parallel of ALU_16
+# -- Compiling entity DE2
+# -- Compiling architecture stack_computer of DE2
+# -- Compiling architecture nios2_computer of DE2
+# -- Loading entity DE2
+# -- Compiling entity FPGA
+# -- Compiling architecture stack_computer of FPGA
 # -- Loading package MATH_REAL
 # -- Compiling entity LIFO_Stack
 # -- Compiling architecture altera_onchip of LIFO_Stack
@@ -40,7 +62,7 @@ vcom -work work -refresh -force_refresh
 # -- Compiling architecture operative_v0 of S4PU_Datapath
 # -- Compiling entity S4PU_Daughterboard
 # -- Compiling architecture embedded_v0 of S4PU_Daughterboard
-# Compile of DE2.vhd was successful.
+# Compile of FPGA.vhd was successful.
 # Compile of S4PU_Daughterboard.vhd was successful.
 # Compile of main_ram.vhd was successful.
 # Compile of prog_rom.vhd was successful.
@@ -53,4 +75,4 @@ vcom -work work -refresh -force_refresh
 # Compile of Multiplexer.vhd was successful.
 # Compile of ALU_16.vhd was successful.
 # 12 compiles, 0 failed with no errors. 
-vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror -sdfnowarn work.de2(stack_computer)
+vsim -l /dev/null -gui -sdfnoerror -sdfnowarn work.fpga

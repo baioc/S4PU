@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="S4PU-16">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2|S4PU_Daughterboard:U0|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:DATA_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2|S4PU_Daughterboard:U0|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:RETURN_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2|S4PU_Daughterboard:U0|main_ram:MAIN_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l1b1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2|S4PU_Daughterboard:U0|prog_rom:PROGRAM_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ph81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|S4PU_Daughterboard:U1|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:DATA_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|S4PU_Daughterboard:U1|S4PU:CPU|S4PU_Datapath:OPERATIVE_BLOCK|LIFO_Stack:RETURN_STACK|onchip_ram:MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vsa1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|S4PU_Daughterboard:U1|main_ram:MAIN_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l1b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FPGA|S4PU_Daughterboard:U1|prog_rom:PROGRAM_MEMORY|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_oh81.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

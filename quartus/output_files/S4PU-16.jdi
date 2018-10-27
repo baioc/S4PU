@@ -1,8 +1,16 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="e01099dee65b7e68e679"/>
+    <hash md5_digest_80b="7110dadbc9ab6b3e9680"/>
   </project>
   <file_info>
     <file device="EP2C35F672C6" path="S4PU-16.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="integration:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME integration HAS_SOPCINFO 1 GENERATION_ID 1540611474"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>

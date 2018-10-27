@@ -3,19 +3,19 @@
  <debug showDebugMenu="0" />
  <systemtable>
   <columns>
-   <connections preferredWidth="111" />
+   <connections preferredWidth="79" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="257" />
-   <clocksource preferredWidth="256" />
-   <frequency preferredWidth="239" />
+   <clockname preferredWidth="401" />
+   <clocksource preferredWidth="401" />
+   <frequency preferredWidth="385" />
   </columns>
  </clocktable>
- <library expandedCategories="Project,Library,Project/System" />
- <window width="1100" height="800" x="436" y="105" />
+ <library expandedCategories="Project,Library" />
+ <window width="1555" height="934" x="128" y="22" />
  <hdlexample language="VHDL" />
- <generation synthesis="VHDL" />
+ <generation path="qsys" synthesis="VHDL" />
 </preferences>

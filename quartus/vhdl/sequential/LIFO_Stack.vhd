@@ -39,7 +39,7 @@ entity LIFO_Stack is	-- Push-down LIFO Stack with from-the-top offset
 end entity;
 
 
-architecture altera_onchip of LIFO_Stack is	-- default
+architecture onchip_quartus_ram of LIFO_Stack is	-- default
 	-- COMPONENTS --
 	component onchip_ram IS	-- Altera Quartus wizard generated single-port RAM
 		PORT
@@ -71,7 +71,6 @@ architecture altera_onchip of LIFO_Stack is	-- default
 			FAN_IN: positive := 2	-- no. of WIDTH size inputs, should be a power of two
 		);
 		port (
-			-- @note separate signals on mappings needed to fix "globally static" error on ModelSim
 			sel: in std_logic_vector(natural(ceil(log2(real(FAN_IN))))-1 downto 0);
 			mux_in: in std_logic_vector((WIDTH*FAN_IN)-1 downto 0);
 			mux_out: out std_logic_vector(WIDTH-1 downto 0)
@@ -154,6 +153,7 @@ architecture altera_onchip of LIFO_Stack is	-- default
 		reset_sig <= op(1) nor op(0);			-- RESET <-> op="00"
 		update_tosp <= op(1) xor op(0);		-- update TOSP <-> op="01" | op="10"
 
+		-- @fixme could use less resources with a complete adder/subtractor unit
 		pushed <= std_logic_vector(unsigned(tosp_Q_sig) - 1);
 		popped <= std_logic_vector(unsigned(tosp_Q_sig) + 1);
 

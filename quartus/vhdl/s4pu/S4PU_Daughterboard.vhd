@@ -25,11 +25,12 @@ entity S4PU_Daughterboard is
 		reset_n: in std_logic;	-- active low, synchronous
 		mode: in std_logic;
 
-		-- MEMORY EXTENSION (Avalon spec.) --
+		-- MEMORY EXTENSION (External Bus to Avalon Bridge) --
 		read, write: out std_logic;
 		address: out std_logic_vector(ARCH-1 downto 0);
 		readdata: in std_logic_vector(ARCH-1 downto 0);
-		writedata: out std_logic_vector(ARCH-1 downto 0)
+		writedata: out std_logic_vector(ARCH-1 downto 0);
+		acknowledge: in std_logic
 	);
 end entity;
 
@@ -78,6 +79,19 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 		);
 	end component;
 
+	component Reg is	-- Register with asynchronous reset
+		generic (WIDTH: positive := 8);
+		port (
+			-- CLOCK & CONTROL --
+			clock: in std_logic;
+			reset, enable: in std_logic;	-- asynchronous reset
+
+			-- DATA --
+			D: in std_logic_vector(WIDTH-1 downto 0);
+			Q: out std_logic_vector(WIDTH-1 downto 0)
+		);
+	end component;
+
 
 	-- CONSTANT MEMORY RANGE MAPPING --
 	constant MAIN_MEM_START: natural := 0;
@@ -90,24 +104,27 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 	constant EXT_MEM_END: natural := EXT_MEM_START + 23551;		-- xA400 - xFFFF
 
 
+	-- CONSTANTS --
+	constant UNDEFINED: std_logic_vector(ARCH-1 downto 0) := (others => '-');
+
+
 	-- SIGNALS --
 	signal main_mem_wren, cpu_reset_n,
-			 cpu_read, cpu_write,
+			 cpu_read, cpu_write, external,
 			 rs_overflow, rs_underflow,
 			 ds_overflow, ds_underflow: std_logic;
 
-	signal cpu_address, address_range,
-			 cpu_readdata, cpu_writedata,
+	signal avalon_read, avalon_write,
+			 avalon_ren, avalon_wren: std_logic_vector(0 downto 0);
+
+	signal cpu_address, cpu_readdata, cpu_writedata,
 			 main_mem_address, main_mem_q,
-			 prog_mem_address, prog_mem_q: std_logic_vector(ARCH-1 downto 0);
+			 prog_mem_address, prog_mem_q,
+			 last_address, address_range, ext_mem_q,
+			 avalon_in, avalon_out, avalon_addr: std_logic_vector(ARCH-1 downto 0);
 
 
-	-- INTERNAL STATE --
-	subtype InternalState is std_logic_vector(ARCH-1 downto 0);
-	signal last_address: InternalState;
-
-
-	-- DESCRIPTION --
+	-- BEHAVIOUR --
 	begin
 		-- @note fixed data'length and address'length on wizard-generated memory
 		assert (ARCH >= 16)
@@ -115,7 +132,6 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 				 severity FAILURE;
 
 
-		-- COMP. INSTANTIATION --
 		CPU: S4PU
 			generic map (ARCH => ARCH)
 			port map (
@@ -136,6 +152,19 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 				writedata => cpu_writedata
 			);
 
+		cpu_reset_n <= reset_n and		-- @note treating und/overflow as critical errors
+							not(rs_overflow or rs_underflow or ds_overflow or ds_underflow);
+
+		-- memory mapping
+		cpu_readdata <= main_mem_q when
+								(unsigned(address_range) >= MAIN_MEM_START and unsigned(address_range) <= MAIN_MEM_END)
+							 else prog_mem_q when
+								(unsigned(address_range) >= PROG_MEM_START and unsigned(address_range) <= PROG_MEM_END)
+							 else ext_mem_q when
+								(unsigned(address_range) >= EXT_MEM_START and unsigned(address_range) <= EXT_MEM_END)
+							 else UNDEFINED;
+
+
 		MAIN_MEMORY: main_ram
 			port map (
 				address => main_mem_address(13 downto 0),
@@ -145,6 +174,13 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 				q => main_mem_q(15 downto 0)
 			);
 
+		main_mem_address <= std_logic_vector(unsigned(cpu_address) - MAIN_MEM_START);
+
+		main_mem_wren <= '1' when cpu_write='1' and
+										  (unsigned(cpu_address) >= MAIN_MEM_START and unsigned(cpu_address) <= MAIN_MEM_END)
+							  else '0';
+
+
 		PROGRAM_MEMORY: prog_rom
 			port map (
 				address => prog_mem_address(11 downto 0),
@@ -152,47 +188,80 @@ architecture embedded_v0 of S4PU_Daughterboard is	-- default
 				q => prog_mem_q(15 downto 0)
 			);
 
-
-		-- BEHAVIOUR --
-		writedata <= cpu_writedata;
-		address <= cpu_address;
-
-		-- @note stack errors are treated as critical errors that reset the cpu
-		cpu_reset_n <= reset_n and not(rs_overflow or rs_underflow or ds_overflow or ds_underflow);
-
-		-- address range conversion
-		main_mem_address <= std_logic_vector(unsigned(cpu_address) - MAIN_MEM_START);
 		prog_mem_address <= std_logic_vector(unsigned(cpu_address) - PROG_MEM_START);
 
-		-- memory mapping
-		main_mem_wren <= '1' when cpu_write='1' and (unsigned(cpu_address) >= MAIN_MEM_START) and (unsigned(cpu_address) <= MAIN_MEM_END)
-								else '0';
 
-		read <= '1' when cpu_read='1' and (unsigned(cpu_address) >= EXT_MEM_START) and (unsigned(cpu_address) <= EXT_MEM_END)
-					else '0';
-		write <= '1' when cpu_write='1' and (unsigned(cpu_address) >= EXT_MEM_START) and (unsigned(cpu_address) <= EXT_MEM_END)
-					else '0';
+		ADDR_REG: Reg
+			generic map (WIDTH => ARCH)
+			port map (
+				clock => clock,
+				reset => '0',
+				enable => '1',
+				D => cpu_address,
+				Q => last_address
+			);
 
-		-- address register
-		ME: process (clock, reset_n) is
-			begin
-				if (reset_n = '0') then
-					last_address <= (others => '0');
-				elsif (rising_edge(clock)) then
-					last_address <= cpu_address;
-				end if;
-		end process;
+		address_range <= last_address when (abs(signed(cpu_address)-signed(last_address)) /= 1)
+							  else cpu_address;	-- bypass register when reading consecutively
 
-		-- output logic
-		address_range <= last_address when cpu_write='1' or (cpu_read='1' and (unsigned(cpu_address)-unsigned(last_address) /= 1))
-							  else cpu_address;	-- bypass register when not reading consecutively
 
-		cpu_readdata <= main_mem_q when (unsigned(address_range) >= MAIN_MEM_START)
-											and (unsigned(address_range) <= MAIN_MEM_END) else
-							 prog_mem_q when (unsigned(address_range) >= PROG_MEM_START)
-											and (unsigned(address_range) <= PROG_MEM_END) else
-							 readdata when (unsigned(address_range) >= EXT_MEM_START)
-											and (unsigned(address_range) <= EXT_MEM_END)
-							 else (others => '1'); -- undefined
+		AVALON_ADDR_REG: Reg
+			generic map (WIDTH => ARCH)
+			port map (
+				clock => clock,
+				reset => '0',
+				enable => external,
+				D => cpu_address,
+				Q => avalon_addr
+			);
+
+		AVALON_IN_REG: Reg
+			generic map (WIDTH => ARCH)
+			port map (
+				clock => clock,
+				reset => '0',
+				enable => acknowledge,
+				D => readdata,
+				Q => avalon_in
+			);
+
+		AVALON_OUT_REG: Reg
+			generic map (WIDTH => ARCH)
+			port map (
+				clock => clock,
+				reset => '0',
+				enable => external,
+				D => cpu_writedata,
+				Q => avalon_out
+			);
+
+		AVALON_READ_REG: Reg
+			generic map (WIDTH => 1)
+			port map (
+				clock => clock,
+				reset => acknowledge,
+				enable => external,
+				D => avalon_ren,
+				Q => avalon_read
+			);
+
+		AVALON_WRITE_REG: Reg
+			generic map (WIDTH => 1)
+			port map (
+				clock => clock,
+				reset => acknowledge,
+				enable => external,
+				D => avalon_wren,
+				Q => avalon_write
+			);
+
+		avalon_ren(0) <= cpu_read;
+		avalon_wren(0) <= cpu_write;
+		external <= '1' when (unsigned(cpu_address) >= EXT_MEM_START and unsigned(cpu_address) <= EXT_MEM_END) else '0';
+		address <= cpu_address when external='1' else avalon_addr;	-- @note interface addresses are not converted to the external address space
+		ext_mem_q <= readdata when acknowledge='1' else avalon_in;
+		writedata <= cpu_writedata when external='1' else avalon_out;
+		read <= cpu_read when external='1' else avalon_read(0);
+		write <= cpu_write when external='1' else avalon_write(0);
 
 end architecture;

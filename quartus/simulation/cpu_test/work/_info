@@ -4,7 +4,7 @@ K3
 cModel Technology
 d/home/baioc
 Ealu_16
-Z0 w1539119996
+Z0 w1541078170
 Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -14,191 +14,137 @@ Z6 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/A
 l0
 L18
 VW;RQ`a=HDiZ24K^=^eUP;1
-!s100 ]FX2DL2`2SEHfQcoSDcLg2
 Z7 OV;C;10.1d;51
 32
-!i10b 1
-Z8 !s108 1540524163.478630
+Z8 !s108 1541092203.364737
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
 Z10 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd|
 Z11 o-work work -2002 -explicit -O0
 Z12 tExplicit 1
+!s100 ]FX2DL2`2SEHfQcoSDcLg2
+!i10b 1
 Aparallel
 R1
 R2
 R3
-Z13 DEx4 work 6 alu_16 0 22 W;RQ`a=HDiZ24K^=^eUP;1
+DEx4 work 6 alu_16 0 22 W;RQ`a=HDiZ24K^=^eUP;1
 l69
 L38
-Z14 VRzC^7ZW0ARczV?YXk^=Z42
-Z15 !s100 H:ITk>Izj@_OS9^mOznML1
+VRzC^7ZW0ARczV?YXk^=Z42
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 H:ITk>Izj@_OS9^mOznML1
+!i10b 1
 Ede2
+Z13 w1541091572
 R2
 R3
-32
-Z16 w1540477046
 R4
-Z17 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd
-Z18 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd
+Z14 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd
+Z15 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd
 l0
 L5
-VK^]@k3hjEn>lUR6b4Va0@1
+V6=JHaANdNRa:e3A[jFoFY2
 R7
-Z19 !s108 1540477913.976367
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd|
-Z21 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd|
+32
+Z16 !s108 1541092202.690241
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd|
+Z18 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd|
 R11
 R12
+!s100 ecW`X8F[:cd:h>LT7=9LT3
 !i10b 1
-!s100 9>5a[GdH4DUJMl8e`DYF01
 Astack_computer
 R2
 R3
-Z22 DEx4 work 3 de2 0 22 K^]@k3hjEn>lUR6b4Va0@1
-32
-l64
+Z19 DEx4 work 3 de2 0 22 6=JHaANdNRa:e3A[jFoFY2
+l77
 L37
-VnmF;AZP?LF^K7k8m0_nUf0
+VSzZLYI<1Ll7R<YKz6Q<7[2
 R7
-R19
-R20
-R21
+32
+R16
+R17
+R18
 R11
 R12
+!s100 73NES3ZPLFaQS302^kzHZ3
 !i10b 1
-!s100 R?mNIJAOjL[K_E42T1hL91
 Anios2_computer
 R2
 R3
-R22
-32
+R19
 l26
 L15
 V;=iVNG<0b]6AD;:EB=;J@1
 R7
-R19
-R20
-R21
+32
+R16
+R17
+R18
 R11
 R12
-!i10b 1
 !s100 _XoRAYXQz126_ho`i:Z]`0
-Efpga
-Z23 w1540524090
-R2
-R3
-R4
-Z24 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd
-Z25 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd
-l0
-L15
-VaPTVTLXL3`L@I@Rjo1X3N2
-R7
-32
-Z26 !s108 1540524163.092044
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd|
-Z28 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd|
-R11
-R12
-!s100 iZBRW[jGCY325:I][7;hU1
-!i10b 1
-Astack_computer
-R2
-R3
-DEx4 work 4 fpga 0 22 aPTVTLXL3`L@I@Rjo1X3N2
-l53
-L25
-Vagi;;mQMG6GELToTIgzAI1
-R7
-32
-R26
-R27
-R28
-R11
-R12
-!s100 i?i5_l051Toz=Wb=:A1PW0
 !i10b 1
 Elifo_stack
-Z29 w1540522029
-Z30 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+Z20 w1541078248
+Z21 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
 R1
 R2
 R3
 R4
-Z31 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd
-Z32 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd
+Z22 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd
+Z23 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd
 l0
 L19
 V8`B^25FOa1=4gb_kGMFgA1
 R7
 32
-Z33 !s108 1540524163.362432
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd|
-Z35 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd|
+Z24 !s108 1541092203.403148
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd|
+Z26 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/LIFO_Stack.vhd|
 R11
 R12
 !s100 _C=lWo`4<A0iP^GShDQE70
 !i10b 1
-Aonchip_quartus_ram
-R30
-R1
-R2
-R3
-Z36 DEx4 work 10 lifo_stack 0 22 8`B^25FOa1=4gb_kGMFgA1
-l106
-L42
-VlbAS;`?e8JL:3VL2Xi`S50
-R7
-32
-R33
-R34
-R35
-R11
-R12
-!s100 mz=GP2ISnAF=QSg3aTFoA2
-!i10b 1
 Aaltera_onchip
-R30
+R21
 R1
 R2
 R3
-R36
-32
+DEx4 work 10 lifo_stack 0 22 8`B^25FOa1=4gb_kGMFgA1
 l106
 L42
 VhR8YCBIW0[B7]Vg`j3Fj91
+!s100 4B[?XKjVR0TF4`I3eLVLm0
 R7
-R34
+32
+R24
+R25
+R26
 R11
 R12
-w1539094514
-R35
-!s108 1540517903.055988
 !i10b 1
-!s100 4B[?XKjVR0TF4`I3eLVLm0
 Emain_ram
-Z37 w1540511169
+Z27 w1541078170
 R2
 R3
 R4
-Z38 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd
-Z39 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd
+Z28 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd
+Z29 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd
 l0
 L42
 V?30`aX`P0]@OYLIV^ITlE0
 R7
 32
-Z40 !s108 1540524163.206156
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd|
-Z42 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd|
+Z30 !s108 1541092203.038671
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd|
+Z32 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/main_ram/main_ram.vhd|
 R11
 R12
 !s100 g`^E<U6amAXc`^KA14o>B3
@@ -212,36 +158,36 @@ L54
 VmL1jNid3Uo7[fPDDKL[Ml0
 R7
 32
-R40
-R41
-R42
+R30
+R31
+R32
 R11
 R12
 !s100 cKK=CMRg?jP:<B?>3U9JS1
 !i10b 1
 Emultiplexer
-Z43 w1539094488
-R30
+R27
+R21
 R1
 R2
 R3
 R4
-Z44 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
-Z45 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
+Z33 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
+Z34 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd
 l0
 L19
 VGi@LzO5Kb?7AT4Ua=P;Ga3
 R7
 32
-Z46 !s108 1540524163.449670
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd|
-Z48 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd|
+Z35 !s108 1541092203.326973
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd|
+Z37 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/Multiplexer.vhd|
 R11
 R12
 !s100 2;BF[l6PK3aD<kdamLl5@0
 !i10b 1
 Avectorial
-R30
+R21
 R1
 R2
 R3
@@ -249,65 +195,65 @@ DEx4 work 11 multiplexer 0 22 Gi@LzO5Kb?7AT4Ua=P;Ga3
 l39
 L37
 VQAQkm0VQBB;KG0Qhd6d160
-!s100 Qj@f?fBTNkC9^c8NGdC1B3
 R7
 32
-R46
-R47
-R48
+R35
+R36
+R37
 R11
 R12
+!s100 Qj@f?fBTNkC9^c8NGdC1B3
 !i10b 1
 Eonchip_ram
-Z49 w1538663406
+R27
 R2
 R3
 R4
-Z50 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
-Z51 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
+Z38 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
+Z39 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd
 l0
 L42
 V_LGL4?zEH6=G`;3MS6jAg3
+!s100 0Y=UB9W:FkmZao6;GJ6U92
 R7
 32
-Z52 !s108 1540524163.395651
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd|
-Z54 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd|
+!i10b 1
+Z40 !s108 1541092203.438100
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd|
+Z42 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/onchip_ram/onchip_ram.vhd|
 R11
 R12
-!s100 0Y=UB9W:FkmZao6;GJ6U92
-!i10b 1
 Asyn
 R2
 R3
-DEx4 work 10 onchip_ram 0 22 _LGL4?zEH6=G`;3MS6jAg3
+Z43 DEx4 work 10 onchip_ram 0 22 _LGL4?zEH6=G`;3MS6jAg3
 l85
 L54
-V;<h2T=kALbGHhBDUiSEiS2
+Z44 V;<h2T=kALbGHhBDUiSEiS2
+Z45 !s100 JN1KGHZFgo:H6>en^:g:23
 R7
 32
-R52
-R53
-R54
+!i10b 1
+R40
+R41
+R42
 R11
 R12
-!s100 JN1KGHZFgo:H6>en^:g:23
-!i10b 1
 Eprog_rom
-R37
+Z46 w1541091761
 R2
 R3
 R4
-Z55 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd
-Z56 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd
+Z47 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd
+Z48 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd
 l0
 L42
 V0GN`23OINW8CW?=UEn5zT1
 R7
 32
-Z57 !s108 1540524163.234203
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd|
-Z59 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd|
+Z49 !s108 1541092202.978419
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd|
+Z51 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/magic/prog_rom/prog_rom.vhd|
 R11
 R12
 !s100 aVe>mHedMkaQT2WOjS=E23
@@ -321,28 +267,28 @@ L52
 VSmc6Gn7DhmNBhj7M=VY?R3
 R7
 32
-R57
-R58
-R59
+R49
+R50
+R51
 R11
 R12
 !s100 7c@LKU[`h:V<WY[<dUl:K1
 !i10b 1
 Ereg
-Z60 w1539093512
+R27
 R2
 R3
 R4
-Z61 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
-Z62 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
+Z52 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
+Z53 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd
 l0
 L17
 V=`QzAC2D9ldUzNVJhEA9z2
 R7
 32
-Z63 !s108 1540524163.426204
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd|
-Z65 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd|
+Z54 !s108 1541092203.088986
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd|
+Z56 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/sequential/Reg.vhd|
 R11
 R12
 !s100 CBA_SzT=col8JQcVjk2@n0
@@ -356,28 +302,28 @@ L31
 V8<kAb=MfPCUfb7]onkD_23
 R7
 32
-R63
-R64
-R65
+R54
+R55
+R56
 R11
 R12
 !s100 Qmdj?A:Ja]CJHnZLF;odo3
 !i10b 1
 Es4pu
-Z66 w1539947456
+R27
 R2
 R3
 R4
-Z67 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
-Z68 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
+Z57 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
+Z58 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
 l0
 L17
 V?FB?M;^T8j>laIZ59joY?2
 R7
 32
-Z69 !s108 1540524163.263080
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd|
-Z71 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd|
+Z59 !s108 1541092203.132340
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd|
+Z61 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd|
 R11
 R12
 !s100 6KU:fO70GQDAWK:?f[e7F0
@@ -391,28 +337,28 @@ L40
 VnAcCYzD`<L>PGY0`L?LVS0
 R7
 32
-R69
-R70
-R71
+R59
+R60
+R61
 R11
 R12
 !s100 KVWFf@Z5OhP=?=C8k_@Ch2
 !i10b 1
 Es4pu_control
-Z72 w1540521659
+R27
 R2
 R3
 R4
-Z73 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
-Z74 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
+Z62 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
+Z63 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd
 l0
 L17
 VkNf>iTZ[oBOIMjDGT[mkk1
 R7
 32
-Z75 !s108 1540524163.295979
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd|
-Z77 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd|
+Z64 !s108 1541092203.196364
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd|
+Z66 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Control.vhd|
 R11
 R12
 !s100 Eh>XdG[HY]EeR0`FzbeHd3
@@ -426,36 +372,36 @@ L60
 VZTcKZF>;glcmn9[>WQS=b2
 R7
 32
-R75
-R76
-R77
+R64
+R65
+R66
 R11
 R12
 !s100 CUfkBjZKzT>WUW>AH>;5l3
 !i10b 1
 Es4pu_datapath
-Z78 w1540521653
-R30
+R20
+R21
 R1
 R2
 R3
 R4
-Z79 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
-Z80 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
+Z67 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
+Z68 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd
 l0
 L19
 V0oYFj0iH[RkJn7=f1DN5A2
 R7
 32
-Z81 !s108 1540524163.325905
-Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd|
-Z83 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd|
+Z69 !s108 1541092203.268465
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd|
+Z71 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Datapath.vhd|
 R11
 R12
 !s100 He94@lIU`3M`_BXef>P^A0
 !i10b 1
 Aoperative_v0
-R30
+R21
 R1
 R2
 R3
@@ -465,47 +411,47 @@ L56
 V?PmJ^P5eY<SH:bk:5dFQ22
 R7
 32
-R81
-R82
-R83
+R69
+R70
+R71
 R11
 R12
 !s100 ^4B^aNWNalgZS`iA]^@K[1
 !i10b 1
 Es4pu_daughterboard
-Z84 w1540522659
+R20
 R1
 R2
 R3
 R4
-Z85 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
-Z86 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
+Z72 8/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
+Z73 F/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd
 l0
 L18
-VfiV=Kn^:6PS9P2D_eaHli0
+Vd]ZgWSg=dd^O6af>bN]<O1
 R7
 32
-Z87 !s108 1540524163.162318
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd|
-Z89 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd|
+Z74 !s108 1541092202.869344
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd|
+Z76 !s107 /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU_Daughterboard.vhd|
 R11
 R12
-!s100 RYFT:_Yc8USBOf=C=?4[i3
+!s100 RjNYXa^TUmkV4d]RdVQnX3
 !i10b 1
 Aembedded_v0
 R1
 R2
 R3
-DEx4 work 18 s4pu_daughterboard 0 22 fiV=Kn^:6PS9P2D_eaHli0
-l128
-L38
-V^Of71lBJQ:ZW7HUHV20o12
+DEx4 work 18 s4pu_daughterboard 0 22 d]ZgWSg=dd^O6af>bN]<O1
+l111
+L37
+VHOQ:RemYFckF5UQ;biB9P1
 R7
 32
-R87
-R88
-R89
+R74
+R75
+R76
 R11
 R12
-!s100 5]PK[^IP69MI;AFJZCNUT2
+!s100 H5NQolmQ?I@N?^na[O24F1
 !i10b 1

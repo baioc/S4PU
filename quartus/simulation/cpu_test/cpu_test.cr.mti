@@ -15,6 +15,16 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity main_ram
 -- Compiling architecture SYN of main_ram
 
+} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/DE2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DE2
+-- Compiling architecture nios2_computer of DE2
+-- Compiling architecture stack_computer of DE2
+-- Loading entity DE2
+
 } {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/combinatorial/ALU_16.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -33,14 +43,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package MATH_REAL
 -- Compiling entity S4PU_Datapath
 -- Compiling architecture operative_v0 of S4PU_Datapath
-
-} {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/FPGA.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity FPGA
--- Compiling architecture stack_computer of FPGA
 
 } {} {}} /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd {1 {vcom -work work -2002 -explicit /mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/vhdl/s4pu/S4PU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -100,6 +102,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Loading package MATH_REAL
 -- Compiling entity LIFO_Stack
--- Compiling architecture onchip_quartus_ram of LIFO_Stack
+-- Compiling architecture altera_onchip of LIFO_Stack
 
 } {} {}}

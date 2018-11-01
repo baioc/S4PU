@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("/home/baioc/Documents/Computacao/Projetos/S4PU/quartus/output_files/") File("S4PU-16.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("/mnt/STORAGE/Documents/Computacao/Projetos/S4PU/quartus/output_files/") File("S4PU-16.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,4 +1,0 @@
-# Compile of TB_Mux.vht was successful.
-# Compile of Multiplexer.vhd was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -l /dev/null -gui work.tb_mux

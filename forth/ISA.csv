@@ -1,6 +1,5 @@
 Assembly,"Machine Code"
 
-&,&
 NOP,8001
 @,8003
 !,8005
@@ -35,6 +34,3 @@ SBR,8053
 
 TRUE,FFFF
 FALSE,0000
-
-STDOUT,FE00
-STDIN,FE10

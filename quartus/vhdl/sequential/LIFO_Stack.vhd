@@ -12,8 +12,8 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;	-- type conversion
-use ieee.math_real.all;	-- log2 & ceil
+use ieee.numeric_std.all;		-- type conversion
+use ieee.math_real.all;			-- log2 & ceil
 
 
 entity LIFO_Stack is	-- Push-down LIFO Stack with from-the-top offset
@@ -71,7 +71,6 @@ architecture altera_onchip of LIFO_Stack is	-- default
 			FAN_IN: positive := 2	-- no. of WIDTH size inputs, should be a power of two
 		);
 		port (
-			-- @note separate signals on mappings needed to fix "globally static" error on ModelSim
 			sel: in std_logic_vector(natural(ceil(log2(real(FAN_IN))))-1 downto 0);
 			mux_in: in std_logic_vector((WIDTH*FAN_IN)-1 downto 0);
 			mux_out: out std_logic_vector(WIDTH-1 downto 0)
@@ -154,6 +153,7 @@ architecture altera_onchip of LIFO_Stack is	-- default
 		reset_sig <= op(1) nor op(0);			-- RESET <-> op="00"
 		update_tosp <= op(1) xor op(0);		-- update TOSP <-> op="01" | op="10"
 
+		-- @todo could be better optimized with a complete adder/subtractor unit.
 		pushed <= std_logic_vector(unsigned(tosp_Q_sig) - 1);
 		popped <= std_logic_vector(unsigned(tosp_Q_sig) + 1);
 
@@ -167,7 +167,7 @@ architecture altera_onchip of LIFO_Stack is	-- default
 		address_mux_in <= (
 			tosp_Q_sig &	-- 11 -> read at current tosp
 			pushed &			-- 10 -> write at next of stack
-			popped &			-- 01	-> read at next of stack
+			popped &			-- 01 -> read at next of stack
 			UNDEFINED		-- 00
 		);
 

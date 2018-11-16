@@ -1,7 +1,0 @@
-# Compile of TB_Control.vht failed with 2 errors.
-# Compile of TB_Control.vht failed with 1 errors.
-# Compile of TB_Control.vht was successful.
-# Compile of TB_Control.vht was successful.
-# Compile of S4PU_Control.vhd was successful.
-# 2 compiles, 0 failed with no errors. 
-vsim -l /dev/null -gui -sdftyp /=/mnt/STORAGE/Documents/Computacao/Digital/SD/S4PU/quartus/simulation/modelsim/S4PU-16_vhd.sdo -sdfnoerror work.tb_control

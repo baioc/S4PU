@@ -962,7 +962,7 @@ endmodule
 // Retrieval info: PRIVATE: INIT_TO_SIM_X NUMERIC "0"
 // Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
-// Retrieval info: PRIVATE: JTAG_ID STRING "LIFO"
+// Retrieval info: PRIVATE: JTAG_ID STRING "STAK"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "256"
@@ -1003,9 +1003,9 @@ endmodule
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 16 0 @q_a 0 0 16 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.vhd TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.inc TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.cmp TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram_inst.vhd TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram.bsf TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram_inst.vhd FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL onchip_ram_syn.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

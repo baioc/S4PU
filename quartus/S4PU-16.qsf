@@ -46,8 +46,8 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -481,6 +481,10 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL OFF
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS NOT_USED -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TB_Mux -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE vhdl/s4pu/S4PU_Datapath.vhd
 set_global_assignment -name VHDL_FILE vhdl/combinatorial/Multiplexer.vhd
 set_global_assignment -name VHDL_FILE vhdl/sequential/Reg.vhd
@@ -496,12 +500,9 @@ set_global_assignment -name VHDL_TEST_BENCH_FILE testbench/TB_ALU.vht
 set_global_assignment -name VHDL_TEST_BENCH_FILE testbench/TB_Stack.vht
 set_global_assignment -name VHDL_TEST_BENCH_FILE testbench/TB_Control.vht
 set_global_assignment -name VHDL_FILE vhdl/s4pu/S4PU_Daughterboard.vhd
-set_global_assignment -name QIP_FILE magic/main_ram/main_ram.qip
+set_global_assignment -name QIP_FILE magic/dual_ram/dual_ram.qip
 set_global_assignment -name QIP_FILE magic/prog_rom/prog_rom.qip
 set_global_assignment -name MIF_FILE memory/prog.mif
 set_global_assignment -name VHDL_FILE vhdl/DE2.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name QIP_FILE qsys/synthesis/integration.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
